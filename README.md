@@ -1,2 +1,33 @@
 # ProyectoEDA2
 Código del proyecto EDA 
+INSTRUCCIONES PARA EJECUTAR EL PROGRAMA
+
+REQUISITOS PREVIOS
+- Tener Python 3.8 o superior instalado en el sistema.
+- Instalar las dependencias necesarias ejecutando el siguiente comando en la terminal o CMD:
+  pip install biopython numpy
+
+ARCHIVOS INCLUIDOS
+- upgma_pipeline.py : script principal para calcular la matriz de distancias, construir el árbol y visualizarlo.
+- aligned_h3n2.fasta : archivo de entrada con las secuencias alineadas.
+
+PASOS PARA EJECUTAR
+1. Colocar los archivos upgma_pipeline.py y aligned_h3n2.fasta en la misma carpeta.
+2. Abrir la terminal o CMD en esa carpeta.
+3. Ejecutar el programa con el siguiente comando:
+   python upgma_pipeline.py
+   (Este comando usará por defecto el archivo aligned_h3n2.fasta, que es del trabajo)
+   El programa puede ser simplemente ejecutado con F5 en el propio VSCode
+
+RESULTADOS
+- El programa tarda entre 11 y 13 segundos aproximadamente para aparecer debido a su complejidad temporal t(n) = n² · L, ya que tiene 111 cepas completas del subtipo H3N2 de Influenza A.
+- Al ejecutar, se abrirá una ventana interactiva mostrando el árbol filogenético.
+- Puede desplazarse por el árbol usando:
+  - Las barras de desplazamiento horizontal y vertical.
+  - La rueda del mouse (Shift + rueda para desplazamiento horizontal).
+  - Use el scroll del mouse cerca al borde derecho para desplazarse
+  - Los botones en la parte inferior permiten resaltar una cepa específica.
+
+NOTAS
+- El archivo FASTA de entrada debe contener secuencias previamente alineadas (por ejemplo, salida de MAFFT).
+- No se requiere conexión a Internet para ejecutar el programa.
